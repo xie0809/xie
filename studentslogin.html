@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+    		<title>登入页面</title>
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    		<style>
+			body{
+				background:url('琼台落日.jpg')  no-repeat;background-size:cover;font-size: 16px;}
+			.container{
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+				width: 500px;
+				padding:40px;
+				background: rgba(0,0,0,.4);
+				box-sizing: border-box;
+				box-shadow: 0 15px  25px rgba(0,0,0,.7);
+				border-radius: 10px;
+				}
+			.form-title{
+				color:#fff;
+				}
+			.form1{
+				background: rgba(255,255,255,0.2);width:400px;margin:100px auto;}	
+			#_form1{
+				display: block;}
+			.fa{
+				display: inline-block;
+				top: 27px;
+				position: relative;
+				color: #ccc;}
+		</style>
+        <script type="text/javascript">
+function fun() { 
+  var obj,args=fun.arguments,v,s,t; 
+ t=args[0];
+  obj=document.getElementById(args[1]); 
+  v=document.getElementById(args[2]);
+  s=document.getElementById(args[3]);
+  var d=document.getElementById(args[4]);
+  if(t=='0')
+	{d.hidden="";
+	obj.hidden="";
+	v.hidden="hidden";
+	s.hidden="hidden";
+	}
+	else{
+		d.hidden="hidden";
+	obj.hidden="hidden";
+	v.hidden="";
+	s.hidden="";
+		
+		
+		
+		}
+}
+        </script>
+	</head>
+<body>
+		<div class="form1">
+			<div class="container">
+			<form class="form-horizontal col-sm-offset-3 col-md-offset-3" id="_form1" action="login.php" method="post">
+				
+				<h3 class="form-title">用户登入</h3>
+				<div class="col-sm-9 col-md-9">
+					<div class="form-group">
+						<i class="fa fa-user fa-lg"></i>
+						<input class="form-control required" type="text" placeholder="请输入学号" name="yonghu" autofocus="autofocus" maxlength="10"/>
+					</div>
+					<div class="form-group">
+							<i class="fa fa-lock fa-lg"></i>
+							<input class="form-control required" type="password" placeholder="请输入密码" name="passwd" maxlength="16"/>
+					</div>
+					<hr/>
+					<div class="form-group">
+						<input type="submit" class="btn btn-success" value="登入 "/>   
+						<a href="register.html"  class="btn btn-success">注册</a>
+						<a href="password.html" class="btn btn-success">忘记密码</a>
+						<a href="updatepassword.html" class="btn btn-success">修改密码</a>
+					</div>
+					
+				</div>
+			</form>
+		</div>
+
+    
+    </body>
+</html>
